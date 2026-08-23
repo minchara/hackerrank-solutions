@@ -1,0 +1,36 @@
+// ──────────────────────────────────────────────────
+// Link        https://www.hackerrank.com/challenges/java-string-reverse/problem?isFullScreen=true
+// Problem     Java String Reverse
+// Difficulty  Easy
+// Subdomain   Strings
+// Platform    HackerRank
+// Language    java
+// Status      Accepted
+// Submitted   2026-08-23, 08:54 p.m.
+// ──────────────────────────────────────────────────
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        sc.close();
+        
+        // Check if the string is equal to its reversed version
+        String reversed = new StringBuilder(A).reverse().toString();
+        
+        if (A.equals(reversed)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+
+
+
